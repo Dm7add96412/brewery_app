@@ -24,8 +24,7 @@ const App = () => {
         },
         {
           path: "search/:searchWord",
-          element: <SearchPage/>,
-          errorElement: <ErrorPage/>
+          element: <SearchPage/>
         },
         {
           path: "*",

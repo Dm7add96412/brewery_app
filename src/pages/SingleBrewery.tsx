@@ -2,6 +2,8 @@ import React, {useEffect, useState} from 'react'
 import { Brewery } from '../interfaces/Brewery'
 import axios from 'axios'
 import { useParams } from 'react-router-dom'
+import Link from '@mui/material/Link'
+import Box from '@mui/material/Box'
  
 const SinglepageBrewery = () => {
   const [brewery, setBrewery] = useState<Brewery | undefined>(undefined)
@@ -21,13 +23,16 @@ const SinglepageBrewery = () => {
   }, [])
 
   return (
-    <div>
-      <p>Brewery name: {brewery?.name}</p>
-      <p>City: {brewery?.city}</p>
-      <p>Country: {brewery?.country}</p>
-      <p>Website: {brewery?.website_url}</p>
-      
-    </div>
+    <Box 
+      display='flex'
+      flexDirection='column'
+      alignItems='center'>
+      <p><b>Brewery name: </b>{brewery?.name}</p>
+      <p><b>City: </b>{brewery?.city}</p>
+      <p><b>Country: </b>{brewery?.country}</p>
+      <p><b>Website: </b>{brewery?.website_url ? <Link href={brewery?.website_url}
+      underline='hover'>{brewery?.website_url}</Link> : "Brewery doesn't have a website"} </p>
+    </Box>
     
   )
 }
