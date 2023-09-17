@@ -19,19 +19,20 @@ const App = () => {
           element: <AllBreweries/>
         },
         {
-          path: "singlebrewery/:breweryId",
+          path: "/singlebrewery/:breweryId",
           element: <SinglepageBrewery/>
         },
         {
-          path: "search/:searchWord",
-          element: <SearchPage/>
+          path: "/search/:searchWord",
+          element: <SearchPage/>,
+          errorElement: <NoBreweriesFound/>
         },
         {
           path: "*",
           element: <ErrorPage/>
         },
         {
-          path: "nofound",
+          path: "/nofound",
           element: <NoBreweriesFound/>
         }
       ]

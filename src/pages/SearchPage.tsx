@@ -23,7 +23,7 @@ const SearchPage = () => {
                 setFoundBreweries(response.data)
                 // console.log('foundBreweries: ',response.data)
             } else {
-                navigate('nofound')
+                navigate('/nofound')
             }
         } catch(e) {
             const error = e as AxiosError
