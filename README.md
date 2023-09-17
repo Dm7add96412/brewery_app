@@ -4,4 +4,4 @@ Fetches and display data of brewery companies. Simple navigation to a detailed s
 
 Data from: [https://www.openbrewerydb.org/documentation](https://www.openbrewerydb.org/documentation) 
 
-You can find the deployed app in [https://reactbreweryapp.netlify.app/](here) 
+You can find the deployed app in [here](https://reactbreweryapp.netlify.app/) 
