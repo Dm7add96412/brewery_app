@@ -1,9 +1,10 @@
 import React from 'react'
 import { Link, Outlet } from 'react-router-dom'
-import Search from '../components/Search'
 import Box from '@mui/material/Box'
 import SvgIcon, { SvgIconProps } from '@mui/material/SvgIcon'
 import Grid from '@mui/material/Unstable_Grid2'
+
+import Search from '../components/Search'
 
 function HomeIcon(props: SvgIconProps) {
   return (
